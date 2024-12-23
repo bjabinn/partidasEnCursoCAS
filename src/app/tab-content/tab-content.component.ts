@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./tab-content.component.css']
 })
 export class TabContentComponent {
-  @Input() games?: any[]; // Marcar la propiedad 'games' como opcional
+  @Input() games!: { player1: string, player2: string, result1: number, result2: number }[];
 }
