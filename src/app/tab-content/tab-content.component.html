@@ -1,13 +1,17 @@
 <table class="styled-table">
   <thead>
     <tr>
-      <th>Player 1</th>
-      <th>Player 2</th>
+      <th>Jugador</th>
+      <th></th>
+      <th></th>
+      <th>Jugador</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let game of games">
       <td>{{ game.player1 }}</td>
+      <td>{{ game.result1 }}</td>
+      <td>{{ game.result2 }}</td>
       <td>{{ game.player2 }}</td>
     </tr>
   </tbody>

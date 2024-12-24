@@ -1,6 +1,5 @@
 <mat-tab-group>
-  <mat-tab *ngFor="let location of locations">
-    <ng-template mat-tab-label>{{ location.name }}</ng-template>
+  <mat-tab *ngFor="let location of locations" [label]="location.name">
     <app-tab-content [games]="location.games"></app-tab-content>
   </mat-tab>
 </mat-tab-group>
