@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Partida } from '../models/partida.model'; // Importa el modelo Partida
 
 @Component({
   selector: 'app-tab-content',
@@ -10,5 +11,5 @@ import { CommonModule } from '@angular/common';
 })
 export class TabContentComponent {
   @Input()
-  games!: { player1: string; player2: string; result1: number; result2: number; }[];
+  partidas!: Partida[]; 
 }

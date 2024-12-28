@@ -8,11 +8,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let game of games">
-      <td>{{ game.player1 }}</td>
-      <td>{{ game.result1 }}</td>
-      <td>{{ game.result2 }}</td>
-      <td>{{ game.player2 }}</td>
+    <tr *ngFor="let partida of partidas">
+      <td>{{ partida.jugador1 }}</td>
+      <td>{{ partida.resultado1 }}</td>
+      <td>{{ partida.resultado2 }}</td>
+      <td>{{ partida.jugador2 }}</td>
     </tr>
   </tbody>
 </table>
